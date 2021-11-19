@@ -5,19 +5,10 @@
 // va applicato uno sconto del 40% per gli over 65.
 
 
-let kilometri;
-let i= 0;
-while(isNaN(kilometri)){
-  if ( i < 3){
-    kilometri =parseInt(prompt('Inserisci kilometri'));
-    i++;
-  }
-    else{
-    kilometri =parseInt(prompt('Testo sbagliato'));
-  }
-}
 
-const eta = parseInt(prompt('Inserisci eta'));
+
+const kilometri =parseInt(prompt('inserisci kilometri'));
+const eta = parseInt(prompt('inserisci eta'));
 // console.log(kilometri, eta);
 
 let prezzoBiglietto= kilometri * 0.21;
