@@ -10,8 +10,4 @@ while(isNaN(kilometri)){
   }
 }
 
-const eta = parseInt(prompt('Inserisci eta'));
-// console.log(kilometri, eta);
 
-let prezzoBiglietto= kilometri * 0.21;
-// console.log(prezzoBiglietto);
