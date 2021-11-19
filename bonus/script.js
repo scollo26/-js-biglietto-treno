@@ -14,10 +14,12 @@ const kilometri =parseInt(prompt('inserisci kilometri'));
 const eta = parseInt(prompt('inserisci eta'));
 
 
-if (!(isNaN(kilometri)) && !(isNaN(eta))) {
+// if (!(isNaN(kilometri)) && !(isNaN(eta))) {
+if (!((isNaN(kilometri)) || (isNaN(eta)))) {
 
   let prezzoBiglietto= kilometri * 0.21;
 // console.log(prezzoBiglietto);
+
 
 
 
