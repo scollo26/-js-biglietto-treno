@@ -14,15 +14,12 @@ const eta = parseInt(prompt('inserisci eta'));
 let prezzoBiglietto= kilometri * 0.21;
 // console.log(prezzoBiglietto);
 
-let sconto20 ='';
-let sconto40 ='';
-
 
 if (eta <= 17 ) {
 
-sconto20 = (prezzoBiglietto * 20) / 100 ;
-// console.log(sconto20);
-prezzoBiglietto = (prezzoBiglietto - sconto20).toFixed(2);
+sconto = (prezzoBiglietto * 20) / 100 ;
+// console.log(sconto);
+prezzoBiglietto = (prezzoBiglietto - sconto).toFixed(2);
 // console.log('Prezzo per minorenni ' + prezzoBiglietto + '€');
 // document.writeln('Prezzo per minorenni ' + prezzoBiglietto + '€');
 
@@ -30,9 +27,9 @@ document.getElementById("my-id").innerHTML = "Il prezzo da pagare per minorenni 
 
 }
  else if (eta > 65) {
-    sconto40 = (prezzoBiglietto * 40) / 100;
-    // console.log(sconto40);
-    prezzoBiglietto = (prezzoBiglietto - sconto40).toFixed(2);
+    sconto = (prezzoBiglietto * 40) / 100;
+    // console.log(sconto);
+    prezzoBiglietto = (prezzoBiglietto - sconto).toFixed(2);
     // console.log('Prezzo per over 65 ' + prezzoBiglietto + '€');
     // document.writeln('Prezzo per over 65 ' + prezzoBiglietto + '€');
 
@@ -44,7 +41,7 @@ document.getElementById("my-id").innerHTML = "Il prezzo da pagare per minorenni 
     //   console.log('Paga prezzo intero ' + prezzoBiglietto + '€');
     //   document.writeln('Prezzo pieno' + prezzoBiglietto + '€');
 
-      document.getElementById("my-id").innerHTML = "il prezzo da pagare è di " + prezzoBiglietto + ' €';
+      document.getElementById("my-id").innerHTML = "Il prezzo da pagare è di " + prezzoBiglietto + ' €';
 
   }
 
